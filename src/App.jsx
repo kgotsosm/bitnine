@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { supabase } from "./supabaseClient";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from './pages/Hero'
-import Home from './pages/Home'
+import Home from './pages/Home' 
 
 function App() {
   const [session, setSession] = useState(null);
