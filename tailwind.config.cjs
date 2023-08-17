@@ -10,7 +10,8 @@ module.exports = withMT({
     colors: {
       background: '#0A192F',
       box: '#1E2329',
-      titleText: '#CCD6F6'
+      titleText: '#CCD6F6',
+      emphasise: '#48B9A5'
     },
     extend: {},
   },
