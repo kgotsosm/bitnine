@@ -2,15 +2,16 @@ import React from "react";
 import { supabase } from "../supabaseClient";
 import { Button } from "@material-tailwind/react";
 import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
+import TopNav from "../components/TopNav";
 import { dummy } from './data.js'
 
 export default function Home({ session }) {
-
+ console.log(session);
+ 
   return (
     <>
       <div className="h-[10vh] w-screen">
-        <Navbar session={session}/>
+        <TopNav session={session}/>
       </div>
       <div className="grid grid-cols-9 gap-1 h-[80vh] mt-1">
         <div className="bg-background col-span-2">
