@@ -1,5 +1,7 @@
 import logo from "../assets/b_logo.png";
 import { supabase } from "../supabaseClient";
+
+
 export default function TopNav({ session }) {
   return (
     <div className="flex flex-cols justify-center w-screen shadow-md mt-0 z-99999 bg-blue-gray-200">

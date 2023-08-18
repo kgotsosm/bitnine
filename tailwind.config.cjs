@@ -13,7 +13,14 @@ module.exports = withMT({
       titleText: '#CCD6F6',
       emphasize: '#48B9A5'
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        sidebar: "300px auto"
+      }, 
+      gridTemplateRows: {
+        header: "64px auto"
+      }
+    }
   },
   plugins: [],
 })

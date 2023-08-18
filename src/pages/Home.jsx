@@ -3,7 +3,6 @@ import { supabase } from "../supabaseClient";
 import { Button } from "@material-tailwind/react";
 import Sidebar from "../components/Sidebar";
 import TopNav from "../components/TopNav";
-import { dummy } from './data.js'
 
 export default function Home({ session }) {
  console.log(session);
@@ -13,18 +12,13 @@ export default function Home({ session }) {
       <div className="h-[10vh] w-screen">
         <TopNav session={session}/>
       </div>
-      <div className="grid grid-cols-9 gap-1 h-[80vh] mt-1">
-        <div className="bg-background col-span-2">
-          <Sidebar />
-        </div>
-        <div className="col-span-7 w-full overflow-y-scroll z-0" >
-          <div className="col-span-4">
-            <h1 className="text-4xl sticky text-gray-700 md:text-6xl font-semibold m-4">Page Heading</h1>
+      <div className="grid grid-cols-9 gap-1 h-[80vh] p-4 bg-gray-100">
+        <div className="col-span-9 w-fullz -0" >
+            <h1 className="text-4xl text-gray-700 md:text-6xl font-semibold">Page Heading</h1>
+          <div>
+            Content
           </div>
         </div>
-      </div>
-      <div className="bg-gray-200 mb-0 h-[9.35vh]">
-        Footer
       </div>
     </>
   );
