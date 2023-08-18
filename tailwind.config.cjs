@@ -7,6 +7,13 @@ module.exports = withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      sm: '648px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     colors: {
       background: '#0A192F',
       box: '#1E2329',
@@ -14,6 +21,9 @@ module.exports = withMT({
       emphasize: '#48B9A5'
     },
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
       gridTemplateColumns: {
         sidebar: "300px auto"
       }, 

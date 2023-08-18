@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "./supabaseClient";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Hero from './pages/Hero';
+import Landing from './pages/Landing';
 import Home from './pages/Home';
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
 
   function HomeWrapper({ session }) {
     // Check if the user is authenticated before rendering Home page
-    return session ? <Home key={session.user.id} session={session} /> : <Hero />;
+    return session ? <Home key={session.user.id} session={session} /> : <Landing />;
   }
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomeWrapper session={session} />} />
-          <Route path="/login" element={<Hero supabaseClient={supabase} />} />
+          <Route path="/login" element={<Landing supabaseClient={supabase} />} />
         </Routes>
       </Router>
     </div>

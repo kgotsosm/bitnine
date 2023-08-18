@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    li {
+        @apply p-4
+    }
+
+    button {
+        @apply text-white border bg-red-600 border-red-800
+        
+    }
+}
