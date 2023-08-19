@@ -29,7 +29,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomeWrapper session={session} />} />
           <Route path="/login" element={<Landing supabaseClient={supabase} />} />
-          <Route path="/agenssql" element={<AgensSqlPage />} />
+          <Route path="/agenssql" element={<AgensSqlPage session={session}/>} />
         </Routes>
       </Router>
     </div>

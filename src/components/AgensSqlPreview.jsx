@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from "react-router-dom";
 import agens from "../assets/agenssql.png";
 
 const AgensSqlPreview = () => {
+  const location = useLocation();
+  const renderButton = location.pathname === "/";
+
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-0">
         <img src={agens} alt="AgensSQL Logo" className="w-220 my-4" />
       </div>
       <div className="grid md:grid-cols-2 px-4 gap-8">
@@ -79,12 +82,14 @@ const AgensSqlPreview = () => {
         </div>
       </div>
       <div className="flex justify-center">
-    <Link to="/agenssql">
-    <button className="bg-blue-600 border-none rounded-md w-[60vw] md:h-20 p-2 mt-8 md:w-[40vw]">
-      View Details
-    </button>
-    </Link>
-  </div>
+        <Link to="/agenssql">
+          {renderButton && (
+            <button className="bg-blue-600 border-none rounded-md w-[60vw] md:h-20 p-2 mt-8 md:w-[40vw]">
+              View Details
+            </button>
+          )}
+        </Link>
+      </div>
     </>
   );
 };

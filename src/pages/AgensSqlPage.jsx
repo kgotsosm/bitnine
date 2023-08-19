@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import AgensSqlPreview from "../components/AgensSqlPreview";
 
-const AgensSqlPage = () => {
+const AgensSqlPage = ({ session }) => {
   return (
     <>
-      <Navbar />
+      <Navbar session={session}/>
       <div className="flex flex-row mt-20">
         <div>
           <div className="">
