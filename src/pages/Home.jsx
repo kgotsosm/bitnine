@@ -1,6 +1,6 @@
 import React from "react";
 import { supabase } from "../supabaseClient";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Hero from '../components/Hero'
 import Products from "../components/Products";
 
