@@ -9,7 +9,7 @@ export default function Landing() {
                     Expansion and innovation of <span className="text-emphasize">graph technology</span> through continuous research and development
                 </h1>
             </div>
-            <div className="flex items-center justify-center bg-white w-full">
+            <div className="flex items-center justify-center md:bg-white w-full">
                 <LogCard />
             </div>
         </div>

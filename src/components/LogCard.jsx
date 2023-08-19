@@ -19,7 +19,9 @@ export default function LogCard() {
             variables: {
               default: {
                 colors: {
+                  brand: "green",
                   brandButtonText: "black",
+                  defaultButtonText: "white",
                   defaultButtonBackground: "black",
                   defaultButtonBackgroundHover: "#020617",
                   defaultButtonBorder: "lightgray",
@@ -27,6 +29,7 @@ export default function LogCard() {
               },
             },
           }}
+          // socialLayout="row"
           theme="auto"
           providers={["github"]}
         />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import agens from "../assets/agenssql.png";
 
 const AgensSqlPreview = () => {
@@ -21,7 +22,7 @@ const AgensSqlPreview = () => {
             </h3>
             <p className="text-lg md:text-xl text-background">
               Various features are added to ensure security and stability of
-              data{" "}
+              data
             </p>
           </div>
         </div>
@@ -77,6 +78,13 @@ const AgensSqlPreview = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center">
+    <Link to="/agenssql">
+    <button className="bg-blue-600 border-none rounded-md w-[60vw] md:h-20 p-2 mt-8 md:w-[40vw]">
+      View Details
+    </button>
+    </Link>
+  </div>
     </>
   );
 };

@@ -3,6 +3,7 @@ import { supabase } from "./supabaseClient";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from './pages/Landing';
 import Home from './pages/Home';
+import AgensSqlPage from './pages/AgensSqlPage'
 
 export default function App() {
   const [session, setSession] = useState(null);
@@ -28,6 +29,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomeWrapper session={session} />} />
           <Route path="/login" element={<Landing supabaseClient={supabase} />} />
+          <Route path="/agenssql" element={<AgensSqlPage />} />
         </Routes>
       </Router>
     </div>
