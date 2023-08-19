@@ -7,7 +7,7 @@ const NavLinks = () => {
   const [subHeading, setSubHeading] = useState("");
 
   return (
-    <div className="bg-white">
+    <div className="sm:border-none border-b-2 mx-6">
       {links.map((link) => (
         <div key={link.name}>
           <div className="px-3 text-left md:cursor-pointer group">
@@ -32,20 +32,16 @@ const NavLinks = () => {
                 <div className="absolute top-20 hidden group-hover:md:block md:hover:block">
                   <div className="p-3.5 bg-white">
                     {link.sublinks.map((sublinks) => (
-                      <div key={sublinks.Head}>
-                        {" "}
-                        {/* Added a unique key for each div */}
+                      <div key={sublinks.Head}> 
                         <h3 className="text-md font-semibold">
                           {sublinks.Head}
                         </h3>
                         <ul>
-                          {" "}
                           {sublinks.sublink.map((slink) => (
                             <li
-                              key={slink.name}
+                              key={slink.name} 
                               className="text-sm text-gray-600 my-2.5"
                             >
-                              {" "}
                               <Link
                                 to={slink.link}
                                 className="hover:text-blue-600"
@@ -62,15 +58,15 @@ const NavLinks = () => {
               </div>
             )}
           </div>
-          {/* Mobile menu*/}
+          {/* Mobile menu */}
           <div
             className={`
-            ${heading === link.name ? "md:hidden" : "hidden"}
-          `}
+              ${heading === link.name ? "md:hidden" : "hidden"}
+            `}
           >
             {/* sublinks */}
             {link.sublinks.map((slinks) => (
-              <div>
+              <div key={slinks.Head}>
                 <div>
                   <h3
                     onClick={() =>
@@ -84,7 +80,9 @@ const NavLinks = () => {
                     <span className="text-xl md:mt-1 md:ml-2 inline">
                       <ion-icon
                         name={`${
-                          subHeading === slinks.Head ? "chevron-up" : "chevron-down"
+                          subHeading === slinks.Head
+                            ? "chevron-up"
+                            : "chevron-down"
                         }`}
                       ></ion-icon>
                     </span>
@@ -95,8 +93,10 @@ const NavLinks = () => {
                     }`}
                   >
                     {slinks.sublink.map((slink) => (
-                      <li className="py-3 pl-14">
-                        <Link to={slink.link} classname='hover:text-blue-600'>{slink.name}</Link>
+                      <li key={slink.name} className="py-3 pl-14">
+                        <Link to={slink.link} className="hover:text-blue-600">
+                          {slink.name}
+                        </Link>
                       </li>
                     ))}
                   </div>
@@ -108,6 +108,7 @@ const NavLinks = () => {
       ))}
     </div>
   );
+  
 };
 
 export default NavLinks;

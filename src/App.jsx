@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "./supabaseClient";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from './pages/Landing';
-import Home from './pages/Home';
-import AgensSqlPage from './pages/AgensSqlPage'
+import { Landing, Home, AgensSqlPage } from './pages'
 
 export default function App() {
   const [session, setSession] = useState(null);

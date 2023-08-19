@@ -1,5 +1,5 @@
 import React from 'react';
-import LogCard from '../components/LogCard';
+import { LogCard } from '../components';
 
 export default function Landing() {
     return (

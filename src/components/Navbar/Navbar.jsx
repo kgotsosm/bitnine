@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { supabase } from "../../supabaseClient"
+import { supabase } from "../../supabaseClient";
 import logo from "../../assets/b_logo.png";
 import NavLinks from "./NavLinks";
 
@@ -9,8 +9,8 @@ export default function Navbar({ session }) {
   const handleNav = () => setNav(!nav);
 
   return (
-    <nav className="bg-white mx-6 lg:mx-10">
-      <div className="flex items-center font-medium justify-around">
+    <nav className="bg-white mx-6 lg:mx-10 lg:h-24">
+      <div className="flex items-center font-medium justify-around ">
         <div className="z-50 p-4 px-0 md:w-auto w-full flex justify-between items-center">
           <Link to="/">
             <img
@@ -25,14 +25,13 @@ export default function Navbar({ session }) {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-line="1.5"
                 stroke="currentColor"
                 className="md:hidden w-6 h-6"
                 onClick={handleNav}
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
                 />
               </svg>
@@ -41,14 +40,14 @@ export default function Navbar({ session }) {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="md:hidden w-6 h-6"
                 onClick={handleNav}
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
@@ -64,20 +63,19 @@ export default function Navbar({ session }) {
           <NavLinks />
         </ul>
         <div className="md:block hidden">
-        <button
-              onClick={() => supabase.auth.signOut()}
-              className="bg-blue-gray-500 hover:bg-blue-gray-800 text-white font-semibold border-blue-200 rounded-md p-3"
-            >
-              Sign Out
-            </button>
+          <button
+            onClick={() => supabase.auth.signOut()}
+            className="bg-blue-gray-500 hover:bg-blue-gray-800 text-white font-semibold border-blue-200 rounded-md p-3"
+          >
+            Sign Out
+          </button>
         </div>
         {/* Mobile */}
         <ul
           className={`
-          md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${
-            nav ? "left-0" : "left-[-100%]"
-          }
-        `}
+            md:hidden bg-white absolute w-[80vw] h-full bottom-0 py-24 pl-4 duration-500 ${
+              nav ? "left-0" : "left-[-100%]"
+            }`}
         >
           <li>
             <Link to="/" className="py-4 text-left inline-block">
@@ -88,7 +86,7 @@ export default function Navbar({ session }) {
           <div className="py-5">
             <button
               onClick={() => supabase.auth.signOut()}
-              className="bg-blue-gray-500 hover:bg-blue-gray-800 text-white font-semibold border-blue-200 rounded-md p-3"
+              className="bg-blue-gray-500  hover:bg-blue-gray-800 w-30 m-6  text-white font-semibold border-blue-200 rounded-md p-3"
             >
               Sign Out
             </button>

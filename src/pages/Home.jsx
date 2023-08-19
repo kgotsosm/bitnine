@@ -1,11 +1,7 @@
 import React from "react";
-import { supabase } from "../supabaseClient";
-import Navbar from "../components/Navbar/Navbar";
-import Hero from '../components/Hero'
-import Products from "../components/Products";
+import { Navbar, Hero, Products } from '../components'
 
 export default function Home({ session }) {
- // console.log(session);
  
   return (
     <>

@@ -1,5 +1,5 @@
 import React from "react";
-import AgensSqlPreview from "./AgensSqlPreview";
+import AgensSqlPreview from "./AgensSqlPreview/AgensSqlPreview";
 
 const Products = () => {
   return (

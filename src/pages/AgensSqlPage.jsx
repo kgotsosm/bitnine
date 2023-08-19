@@ -1,16 +1,13 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
-import AgensSqlPreview from "../components/AgensSqlPreview";
+import { Navbar, AgensSqlPreview } from "../components";
 
 const AgensSqlPage = ({ session }) => {
   return (
     <>
-      <Navbar session={session}/>
-      <div className="flex flex-row mt-20">
+      <Navbar session={session} />
+      <div className="flex flex-row bg-blue-gray-100">
         <div>
-          <div className="">
-            <AgensSqlPreview />
-          </div>
+          <AgensSqlPreview />
         </div>
       </div>
     </>
