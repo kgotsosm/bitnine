@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { supabase } from "../../supabaseClient"
 import logo from "../../assets/b_logo.png";
 import NavLinks from "./NavLinks";
-import Button from "./Button";
 
 export default function Navbar({ session }) {
   const [nav, setNav] = useState(false);
