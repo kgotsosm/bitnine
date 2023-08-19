@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { supabase } from "../../supabaseClient"
 import logo from "../../assets/b_logo.png";
 import NavLinks from "./NavLinks";
 import Button from "./Button";
@@ -64,12 +65,19 @@ export default function Navbar({ session }) {
           <NavLinks />
         </ul>
         <div className="md:block hidden">
-          <Button />
+        <button
+              onClick={() => supabase.auth.signOut()}
+              className="bg-blue-gray-500 hover:bg-blue-gray-800 text-white font-semibold border-blue-200 rounded-md p-3"
+            >
+              Sign Out
+            </button>
         </div>
         {/* Mobile */}
         <ul
           className={`
-          md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${nav ? 'left-0' : 'left-[-100%]'}
+          md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${
+            nav ? "left-0" : "left-[-100%]"
+          }
         `}
         >
           <li>
@@ -79,7 +87,12 @@ export default function Navbar({ session }) {
           </li>
           <NavLinks />
           <div className="py-5">
-            <Button />
+            <button
+              onClick={() => supabase.auth.signOut()}
+              className="bg-blue-gray-500 hover:bg-blue-gray-800 text-white font-semibold border-blue-200 rounded-md p-3"
+            >
+              Sign Out
+            </button>
           </div>
         </ul>
       </div>
