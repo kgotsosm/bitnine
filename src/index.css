@@ -7,3 +7,7 @@
     @apply p-4 border-b-2 mx-6 sm:border-none;
   }
 }
+
+.navbar {
+  z-index: 100;
+}

@@ -7,7 +7,7 @@ const NavLinks = () => {
   const [subHeading, setSubHeading] = useState("");
 
   return (
-    <div className="sm:border-none border-b-2 mx-6 z-50">
+    <div className="sm:border-none border-b-2 mx-6 z-50 navbar">
       {links.map((link) => (
         <div key={link.name}>
           <div className="px-3 text-left md:cursor-pointer group">

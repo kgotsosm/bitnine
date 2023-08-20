@@ -8,7 +8,7 @@ const AgensSqlPage = ({ session }) => {
   return (
     <>
       <div className="w-full fixed top-0 h-24">
-        <Navbar />
+        <Navbar session={session}/>
       </div>
       <div className="h-[100vh] mt-24 flex flex-col justify-center items-center py-2 lg:mb-0 mb-20">
         <img src={agensLogo} alt="AgensSQL Logo" className="md:w-100 w-80" />
