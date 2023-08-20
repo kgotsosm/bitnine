@@ -9,8 +9,8 @@ export default function Navbar({ session }) {
   const handleNav = () => setNav(!nav);
 
   return (
-    <nav className="fixed shadow-md top-0 w-[100vw] bg-white lg:px-0 px-3 mx-0 lg:h-24">
-      <div className="flex items-center font-medium justify-around ">
+    <nav className="bg-white fixed shadow-md w-[100vw] lg:px-0 px-3 mx-0 lg:h-24">
+      <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-4 px-0 md:w-auto w-full flex justify-between items-center">
           <Link to="/">
             <img
@@ -73,25 +73,24 @@ export default function Navbar({ session }) {
         {/* Mobile */}
         <ul
           className={`
-            md:hidden bg-white absolute w-[80vw] h-full bottom-0 py-24 pl-4 duration-500 ${
-              nav ? "left-0" : "left-[-100%]"
-            }`}
+          md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+          duration-500 ${nav ? "left-0" : "left-[-100%]"}
+          `}
         >
-          <li>
-            <Link to="/" className="py-4 text-left inline-block">
-              Home
-            </Link>
-          </li>
-          <NavLinks />
-          <div className="py-5">
-            <button
-              onClick={() => supabase.auth.signOut()}
-              className="bg-blue-gray-500  hover:bg-blue-gray-800 w-30 m-6  text-white font-semibold border-blue-200 rounded-md p-3"
-            >
-              Sign Out
-            </button>
-          </div>
-        </ul>
+            <li>
+              <Link to="/" className="py-4 text-left inline-block">
+                Home
+              </Link>
+            </li>
+            <NavLinks />
+              <button
+                onClick={() => supabase.auth.signOut()}
+                className="bg-blue-gray-500  hover:bg-blue-gray-800 w-30 m-6  text-white font-semibold border-blue-200 rounded-md p-3"
+              >
+                Sign Out
+              </button>
+            
+          </ul>
       </div>
     </nav>
   );
