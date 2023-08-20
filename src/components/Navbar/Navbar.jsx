@@ -9,7 +9,7 @@ export default function Navbar({ session }) {
   const handleNav = () => setNav(!nav);
 
   return (
-    <nav className="bg-white mx-6 lg:mx-10 lg:h-24">
+    <nav className="fixed shadow-md top-0 w-[100vw] bg-white lg:px-0 px-3 mx-0 lg:h-24">
       <div className="flex items-center font-medium justify-around ">
         <div className="z-50 p-4 px-0 md:w-auto w-full flex justify-between items-center">
           <Link to="/">

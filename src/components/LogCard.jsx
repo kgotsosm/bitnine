@@ -5,8 +5,9 @@ import { ThemeSupa } from "@supabase/auth-ui-shared";
 import logo from "../assets/b_logo.png";
 
 export default function LogCard() {
+
   return (
-    <div className="flex flex-col items-center justify-center my-33 lg:mb-5 border-solid p-4 shadow-lg">
+    <div className="flex flex-col items-center justify-center my-33 lg:mb-5 border-solid px-4 py-2 shadow-lg">
       <div className="">
         <img src={logo} alt="Logo" />
       </div>
@@ -25,6 +26,9 @@ export default function LogCard() {
                   defaultButtonBackground: "black",
                   defaultButtonBackgroundHover: "#020617",
                   defaultButtonBorder: "lightgray",
+                },
+                fontSizes: {
+                  baseButtonSize: '16px',
                 },
               },
             },

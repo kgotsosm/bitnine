@@ -9,8 +9,12 @@ const AgensSqlPreview = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center mt-0">
+      <div className="flex justify-center items-center">
         <img src={agens} alt="AgensSQL Logo" className="w-200 mb-8" />
+      </div>
+      <div className='text-center mb-10'>
+        <h2 className='text-gray-900 font-mono font-semibold text-2xl lg:text-3xl'>Key Features</h2>
+        <p className='text-lg my-2'>Manage your data with Agens Enterprise Package</p>
       </div>
         <div className="grid md:grid-cols-2 mb-6 px-6 lg:px-24 gap-8">
           {details.map((item, index) => (

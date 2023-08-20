@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className="flex flex-col justify-center w-full px-2 py-4 gap-5 mx-3">
           <h1 className="text-6xl md:text-8xl text-background font-medium font-inter">
-            Bitnine
+            bitnine
           </h1>
           <p className="text-teal-700 font-medium text-xl md:text-2xl py-2">
             Home of the world's first RDB+GDB multi-model graph database product
