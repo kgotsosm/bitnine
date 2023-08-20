@@ -22,7 +22,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden bg-gray-200">
       <Router>
         <Routes>
           <Route path="/" element={<HomeWrapper session={session} />} />

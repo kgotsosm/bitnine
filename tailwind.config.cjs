@@ -21,15 +21,19 @@ module.exports = withMT({
       emphasize: '#48B9A5'
     },
     extend: {
+      listStyleImage: {
+        checkmark: 'url("./src/assets/checkmark.png")',
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        monda: ["Monda","Noto Sans KR", "sans-serif"],
       },
       gridTemplateColumns: {
         sidebar: "300px auto"
       }, 
       gridTemplateRows: {
         header: "64px auto"
-      }
+      },
     }
   },
   plugins: [],

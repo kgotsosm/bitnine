@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    li {
-        @apply p-4 border-b-2 mx-6 sm:border-none
-    }
-
+  li {
+    @apply p-4 border-b-2 mx-6 sm:border-none;
+  }
 }
-
