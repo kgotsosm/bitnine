@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/bitnine-logo.png";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
+import SocialIcons from './SocialIcons'
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -23,6 +24,11 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   return (
     <nav className="fixed w-full z-[10] top-0 left-0 shadow">
+      <div className="flex justify-end bg-black w-full border-2 border-red-600 text-white px-6 space-x-2">
+      <p className="uppercase hover:text-blue-700 cursor-pointer">Contact</p>
+      <SocialIcons />
+      
+      </div>
       <div className="md:flex items-center justify-between bg-black text-white  py-4 md:px-10 px-7">
         <div className=" cursor-pointer flex items-center ">
           <img src={logo} alt="logo" className="w-24 md:w-60" />
