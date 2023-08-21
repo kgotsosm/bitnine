@@ -13,7 +13,6 @@ export default function LogCard() {
       </div>
       <div className="w-[60vw] md:w-[30vw] mx-0 mb-5">
         <Auth
-          onSubmit={() => console.log(session)}
           supabaseClient={supabase}
           view="sign_up"
           appearance={{

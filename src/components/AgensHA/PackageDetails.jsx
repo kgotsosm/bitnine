@@ -23,6 +23,7 @@ function PackageDetails() {
             <span className="text-blue-400 font-semibold">HA Clustering</span> – Failover/Failback, Load-balancing
           </p>
           <img src={agensha} alt="" className="mt-5" />
+          <p className="text-center mt-5 text-lg text-gray-600">Replication</p>
         </div>
         <div className="md:w-1/2 pb-10">
           <p className=" md:text-2xl text-xl font-bold text-gray-600 text-center">

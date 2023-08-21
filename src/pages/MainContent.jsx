@@ -1,6 +1,5 @@
 import React from "react";
-import { Navbar, AgensSql, EnterprisePack, KeyFeatures, PackageDetails } from "../components";
-
+import { Navbar, AgensSql, EnterprisePack, KeyFeatures, PackageDetails, Footer } from "../components";
 
 const MainContent = ({ session }) => {
   return (
@@ -10,6 +9,7 @@ const MainContent = ({ session }) => {
       <EnterprisePack />
       <KeyFeatures />
       <PackageDetails />
+      <Footer />
     </>
   );
 };

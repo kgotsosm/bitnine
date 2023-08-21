@@ -11,7 +11,7 @@ const Button = ({ text }) => {
 
 function AgensSql() {
   return (
-    <div className="bg-white py-14">
+    <div className="bg-white py-24">
       <div className="flex flex-col justify-center items-center">
         <img className="pt-5 md:pt-18 pb-10" src={agens} />
         <div className="md:w-1/2 px-8">
@@ -32,7 +32,7 @@ function AgensSql() {
             Get AgensSQL now for stable operation and management services at a
             reduced maintenance cost.
           </p>
-          <div className="pt-20 flex flex-row justify-evenly uppercase mx-2 mx:mx-0 space-x-2 md:space-x-10">
+          <div className="pt-20 flex flex-row justify-evenly uppercase mx-2 md:mx-0 space-x-2 md:space-x-10">
           <Button text="Contact" />
           <Button text="Brochure" />
           <Button text="Blog" />

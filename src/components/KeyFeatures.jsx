@@ -72,7 +72,7 @@ export default function KeyFeatures() {
               alt=""
               className="md:w-80  group-hover:opacity-0 duration-500 px-20 py-10 md:px-10 md:py-5"
             />
-            <ol className="opacity-0 group-hover:opacity-100 text absolute   duration-300 transition-all ease-in list-disc text-gray-600 md:text-sm ml-10 px-5">
+            <ol className="opacity-0 group-hover:opacity-100 text absolute duration-300 transition-all ease-in list-disc text-gray-600 md:text-sm ml-10 px-5">
               <li>monitors database activities and collects data</li>
               <li>
                 traces object accessed or DDL & DML statements executed by a

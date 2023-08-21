@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/b_logo.png";
+import logo from "../assets/bitnine-logo.png";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
 
@@ -8,22 +8,22 @@ const Nav = () => {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    navigate("/login");
+    navigate("/")
   };
 
   let Links = [
-    { name: "Products", link: "/" },
-    { name: "Use Cases", link: "/" },
-    { name: "Services", link: "/" },
-    { name: "Resources", link: "/" },
-    { name: "Blog", link: "/" },
-    { name: "Company", link: "/" },
-    { name: "IR", link: "/" },
+    { name: "Products", link: "/prod" },
+    { name: "Use Cases", link: "/use" },
+    { name: "Services", link: "/serv" },
+    { name: "Resources", link: "/res" },
+    { name: "Blog", link: "/blog" },
+    { name: "Company", link: "/comp" },
+    { name: "IR", link: "/ir" },
   ];
   let [open, setOpen] = useState(false);
   return (
-    <nav className=" w-full sticky z-[10] top-0 left-0 shadow">
-      <div className="md:flex items-center justify-between bg-white  py-4 md:px-10 px-7">
+    <nav className="fixed w-full z-[10] top-0 left-0 shadow">
+      <div className="md:flex items-center justify-between bg-black text-white  py-4 md:px-10 px-7">
         <div className=" cursor-pointer flex items-center ">
           <img src={logo} alt="logo" className="w-24 md:w-60" />
         </div>
@@ -40,7 +40,7 @@ const Nav = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static uppercase bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-3 transition-all duration-300 ease-out ${
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static uppercase text-white bg-black md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-3 transition-all duration-300 ease-out ${
             open ? "top-10 " : "top-[-490px]"
           }`}
         >
