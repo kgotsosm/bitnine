@@ -9,7 +9,7 @@ const Footer = () => {
       {windowWidth > 1023 ? (
         <>
           <div className="grid grid-cols-6 px-10 py-10 w-[100vw] bg-black opacity-90 text-white gap-8">
-            <div className="border-2 border-red-800 flex flex-col">
+            <div className="flex flex-col">
               <h3 className="uppercase font-bold">Products</h3>
               <p className="text-semibold hover:text-blue-700 cursor-pointer">
                 Relational Database
@@ -21,13 +21,13 @@ const Footer = () => {
                 Graph-based Solution
               </p>
             </div>
-            <div className="border-2 border-red-800 flex flex-col">
+            <div className="flex flex-col">
               <h3 className="uppercase font-bold">Use Cases</h3>
             </div>
-            <div className="border-2 border-red-800 flex flex-col">
+            <div className=" flex flex-col">
               <h3 className="uppercase font-bold">Services</h3>
             </div>
-            <div className="border-2 border-red-800 flex flex-col">
+            <div className="flex flex-col">
               <h3 className="uppercase font-bold">Resources</h3>
               <p className="text-semibold hover:text-blue-700 cursor-pointer">
                 Documentation
@@ -37,10 +37,10 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="border-2 border-red-800 flex flex-col">
+            <div className="flex flex-col">
               <h3 className="uppercase font-bold">Blog</h3>
             </div>
-            <div className="border-2 border-red-800 flex flex-col">
+            <div className="flex flex-col">
               <h3 className="uppercase font-bold">Company</h3>
               <p className="text-semibold hover:text-blue-700 cursor-pointer">
                 About Us

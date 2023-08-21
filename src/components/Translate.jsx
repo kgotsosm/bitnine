@@ -19,6 +19,8 @@ const Translate = () => {
         );
         document.body.appendChild(addScript);
         window.googleTranslateElementInit = googleTranslateElementInit;
+
+        return
       }, []);
       
   return (

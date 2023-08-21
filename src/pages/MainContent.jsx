@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Navbar, AgensSql, EnterprisePack, KeyFeatures, PackageDetails, Footer } from "../components";
 
-const MainContent = ({ session }) => {
+const MainContent = () => {
 
   return (
     <>
-      <Navbar session={session} id="google_translate_element" />
+      <Navbar />
       <AgensSql />
       <EnterprisePack />
       <KeyFeatures />

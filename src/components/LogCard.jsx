@@ -1,5 +1,5 @@
 import React from "react";
-import { supabase } from "../supabaseClient";
+import { supabase } from "../supabase/supabaseClient";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import logo from "../assets/b_logo.png";
