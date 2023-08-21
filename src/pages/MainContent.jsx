@@ -1,13 +1,17 @@
-import React from 'react'
-import Navbar from '../components/Navbar/Navbar.jsx'
+import React from "react";
+import { Navbar, AgensSql, EnterprisePack, KeyFeatures, PackageDetails } from "../components";
 
-const MainContent = ({session}) => {
+
+const MainContent = ({ session }) => {
   return (
-    <div>
-        <Navbar session={session} />
-        Welcome! {session.user.email} 
-    </div>
-  )
-}
+    <>
+      <Navbar session={session} />
+      <AgensSql />
+      <EnterprisePack />
+      <KeyFeatures />
+      <PackageDetails />
+    </>
+  );
+};
 
-export default MainContent
+export default MainContent;
