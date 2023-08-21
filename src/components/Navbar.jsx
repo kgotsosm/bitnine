@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import logo from "../assets/bitnine-logo.png";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
-import SocialIcons from './SocialIcons'
+import SocialIcons from "./SocialIcons";
+import { Input } from "@material-tailwind/react";
+import Translate from './Translate'
 
 const Nav = () => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    navigate("/")
+    navigate("/");
   };
 
   let Links = [
@@ -24,11 +26,15 @@ const Nav = () => {
   let [open, setOpen] = useState(false);
   return (
     <nav className="fixed w-full z-[10] top-0 left-0 shadow">
-      <div className="flex justify-end bg-black w-full border-2 border-red-600 text-white px-6 space-x-2">
-      <p className="uppercase hover:text-blue-700 cursor-pointer">Contact</p>
-      <SocialIcons />
-      
+      <div className="hidden lg:flex justify-end bg-black w-full text-gray-100 pt-2 px-6 space-x-3">
+        <Translate />
+        <div className="w-72">
+          <Input variant="outlined" placeholder="Search" className="bg-gray-800 text-gray-200 px-2" />
+        </div>
+        <p className="uppercase hover:text-blue-700 cursor-pointer">Contact</p>
+        <SocialIcons />
       </div>
+
       <div className="md:flex items-center justify-between bg-black text-white  py-4 md:px-10 px-7">
         <div className=" cursor-pointer flex items-center ">
           <img src={logo} alt="logo" className="w-24 md:w-60" />
@@ -52,10 +58,7 @@ const Nav = () => {
         >
           {Links.map((link, index) => (
             <div key={index}>
-              <li
-                
-                className=" border-b border-gray-200 md:border-none md:ml-8 md:text-md text-sm md:my-0 py-5 "
-              >
+              <li className=" border-b border-gray-200 md:border-none md:ml-8 md:text-md text-sm md:my-0 py-5 ">
                 <a href={link.link} className=" hover:text-yellow-400 ">
                   {link.name}
                 </a>
@@ -67,7 +70,7 @@ const Nav = () => {
               Try Free
             </div>
             <button
-              className="bg-blue-800 px-4 md:px-6 hover:text-white py-2 text-sm md:text-md rounded md:ml-2 text-yellow-400 md:my-0 my-2"
+              className="bg-blue-800 uppercase px-4 md:px-6 hover:text-white py-2 text-sm md:text-md rounded md:ml-2 text-yellow-400 md:my-0 my-2"
               onClick={handleLogout}
             >
               Logout

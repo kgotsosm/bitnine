@@ -27,14 +27,14 @@ export default function KeyFeatures() {
         />
       </div>
 
-      <div className=" bg-slate-50 flex flex-col items-center px-5 md:pb-20 pb-10">
-        <p className="pt-20 md:text-3xl text-2xl font-bold text-black">
+      <div className=" bg-slate-50 flex flex-col items-center py-4 px-5 md:pb-20 pb-10">
+        <p className="pt-20 md:text-3xl text-2xl py-6 font-bold text-black">
           AgensSQL DB Engine
         </p>
-        <p className="pt-2 md:text-xl text-lg font-bold text-gray-700 underline underline-offset-1">
+        <p className="md:text-xl text-lg font-bold text-gray-700 underline underline-offset-1">
           Enhanced Data Security
         </p>
-        <p className="text-center text-sm md:text-[16px] md:pb-5  w-[300px] pt-10 text-gray-600 ">
+        <p className="text-center text-sm md:text-[16px] md:pb-5 w-[55vw] pt-4 text-gray-600 ">
           AgensSQL is a PostgreSQL-based DBMS that guarantees optimal security and stability.
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center mt-5 ">

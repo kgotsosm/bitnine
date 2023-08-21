@@ -5,11 +5,11 @@ import { data } from "./data";
 
 function PackageDetails() {
   return (
-    <div className="py-6 bg-slate-50">
+    <div className="flex flex-col py-8 bg-slate-50">
       <p className="pt-20 md:text-3xl text-2xl font-bold text-gray-900 text-center px-5">
         Agens Enterprise Package
       </p>
-      <p className="text-center text-sm md:text-[16px] md:pb-5   text-gray-600 pt-3 px-5">
+      <p className="text-center justify-center mx-auto text-sm md:text-[16px] md:pb-5 w-[55vw] text-gray-600 pt-3 px-5">
         Agens Enterprise Package comes with a high availability management
         server that supports backup and data monitoring dashboard that helps
         enterprise customers manage their data efficiently.

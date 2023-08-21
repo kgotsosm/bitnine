@@ -5,6 +5,7 @@ import KeyFeatures from './Keyfeatures'
 import PackageDetails from './AgensHA/PackageDetails'
 import Footer from './Footer'
 import SocialIcons from './SocialIcons'
+import Translate from './Translate'
 
 export {
     Navbar,
@@ -14,4 +15,5 @@ export {
     PackageDetails,
     Footer,
     SocialIcons,
+    Translate,
 }
