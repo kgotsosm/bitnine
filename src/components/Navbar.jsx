@@ -7,6 +7,7 @@ import Translate from "./Translate";
 
 const Navbar = () => {
 
+
   let Links = [
     { name: "Products", link: "/prod" },
     { name: "Use Cases", link: "/use" },
