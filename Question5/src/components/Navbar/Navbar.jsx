@@ -1,22 +1,15 @@
 import React, { useState } from "react";
-import logo from "../assets/bitnine-logo.png";
-import { supabase } from '../supabase/supabaseClient'
-import SocialIcons from "./SocialIcons";
+import logo from "../../assets/bitnine-logo.png";
+import { supabase } from '../../supabase/supabaseClient'
+import SocialIcons from "../SocialIcons";
 import { Input } from "@material-tailwind/react";
-import Translate from "./Translate";
+import Translate from "../Translate";
+import { links as navLinks } from './NavLinks'
 
 const Navbar = () => {
+  const { links } = navLinks
 
-
-  let Links = [
-    { name: "Products", link: "/prod" },
-    { name: "Use Cases", link: "/use" },
-    { name: "Services", link: "/serv" },
-    { name: "Resources", link: "/res" },
-    { name: "Blog", link: "/blog" },
-    { name: "Company", link: "/comp" },
-    { name: "IR", link: "/ir" },
-  ];
+  
   let [open, setOpen] = useState(false);
   return (
     <nav className="fixed w-full z-[10] top-0 left-0 shadow">
@@ -54,19 +47,45 @@ const Navbar = () => {
             open ? "top-10 " : "top-[-490px]"
           }`}
         >
-          {Links.map((link, index) => (
-            <div key={index}>
-              <li className=" border-b border-gray-200 md:border-none md:ml-8 md:text-md text-sm md:my-0 py-5 ">
-                <a href={link.link} className=" hover:text-yellow-400 ">
+          {navLinks.map((link, index) => (
+          <div key={index}>
+            <li className=" border-b border-gray-200 md:border-none md:ml-8 md:text-md text-sm md:my-0 py-5">
+              {link.name === "Products" ? (
+                <div className="relative group">
+                  <a
+                    href={link.link}
+                    className="hover:text-yellow-400 cursor-pointer"
+                  >
+                    {link.name}
+                  </a>
+                  <ul className="absolute hidden py-4 px-2 w-[16vw] capitalize bg-black opacity-90 text-white left-0 top-full mt-4 group-hover:block">
+                    <li className="py-2">
+                      <a href="/relational-database" className="hover:text-yellow-400 hover:block">
+                        Relational Database
+                      </a>
+                    </li>
+                    <li className="py-2">
+                      <a href="/graph-database" className="hover:text-yellow-400">
+                        Graph Database
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              ) : (
+                <a href={link.link} className="hover:text-yellow-400">
                   {link.name}
                 </a>
-              </li>
-            </div>
-          ))}
+              )}
+            </li>
+          </div>
+        ))}
+
           <div className="flex flex-row md:flex-none space-x-2">
-            <div className="bg-blue-800 px-4 md:px-6 text-white py-2 text-sm md:text-md rounded md:ml-8 hover:text-yellow-400 md:my-0 my-2 cursor-pointer">
+            <a href="https://bitnine.net/agensgraph-downloads/" target="blank">
+            <button className="bg-blue-800 px-4 md:px-6 text-white py-2 text-sm uppercase  md:text-md rounded md:ml-8 hover:text-yellow-400 md:my-0 my-2 cursor-pointer">
               Try Free
-            </div>
+            </button>
+            </a>
             <button
               className="bg-blue-800 uppercase px-4 md:px-6 hover:text-white py-2 text-sm md:text-md rounded md:ml-2 text-yellow-400 md:my-0 my-2"
               onClick={() => supabase.auth.signOut()}

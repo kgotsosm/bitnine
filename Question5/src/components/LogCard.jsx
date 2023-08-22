@@ -20,8 +20,8 @@ export default function LogCard() {
             variables: {
               default: {
                 colors: {
-                  brand: "green",
-                  brandButtonText: "black",
+                  brand: "#48B9A5",
+                  brandButtonText: "white",
                   defaultButtonText: "white",
                   defaultButtonBackground: "black",
                   defaultButtonBackgroundHover: "#020617",

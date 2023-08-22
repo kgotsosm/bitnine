@@ -56,5 +56,11 @@
     color: white;
     transform: rotateY(-180deg);
   }
+  .goog-logo-link {
+    display:none !important;
+ }
+ .goog-te-gadget {
+    font-size: 0px!important;
+  }
   
 }

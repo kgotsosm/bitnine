@@ -1,4 +1,4 @@
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
 import AgensSql from './AgensSql'
 import EnterprisePack from './Enterprise/EnterprisePack'
 import Features from './Features'
