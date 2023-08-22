@@ -20,7 +20,7 @@ This project is a clone of the official Bitnine website and demonstrates my abil
 
 ## Features
 
-- Replicates the design and layout of the Bitnine.net website.
+- Replicates the design and layout of the bitnine.net website.
 - Utilizes React for building the user interface.
 - Implements Vite for fast development and builds.
 - Uses Tailwind CSS for styling.
