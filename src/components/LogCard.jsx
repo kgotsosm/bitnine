@@ -21,18 +21,18 @@ export default function LogCard() {
               default: {
                 colors: {
                   brand: "#48B9A5",
-                  brandButtonText: "white",
-                  defaultButtonText: "white",
-                  defaultButtonBackground: "black",
-                  defaultButtonBackgroundHover: "#020617",
+                  brandButtonText: "black",
+                  defaultButtonText: "black",
+                  defaultButtonBackground: "white",
+                  defaultButtonBackgroundHover: "#164e63",
                   defaultButtonBorder: "lightgray",
                 },
               },
             },
           }}
-          // socialLayout="row"
+          socialLayout="row"
           theme="auto"
-          providers={["github"]}
+          providers={["github", "google"]}
         />
       </div>
     </div>
