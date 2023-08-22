@@ -1,5 +1,7 @@
 # Kgotso Makhalimele - Bitnine Clone
 
+### Question 5-1 and Question 5-2
+
 This project is a clone of the [bitnine.net](https://bitnine.net/) website. It was created as part of my internship coding challenge and is **hosted on [bitnine.pages.dev](https://bitnine.pages.dev/)**.
 
 ## Table of Contents
