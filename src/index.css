@@ -56,11 +56,37 @@
     color: white;
     transform: rotateY(-180deg);
   }
-  .goog-logo-link {
-    display:none !important;
- }
- .goog-te-gadget {
-    font-size: 0px!important;
-  }
+  /* Styles for the dropdown menus */
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  opacity: 0.9;
+  padding: 10px;
+  width: 16vw; /* Adjust the width as needed */
+  z-index: 100; /* Adjust the z-index to ensure the dropdown is on top */
+}
+
+.dropdown-menu a {
+  color: white;
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  color: yellow;
+}
+
   
 }
