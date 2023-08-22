@@ -22,7 +22,7 @@ export default function LogCard() {
                 colors: {
                   brand: "#48B9A5",
                   brandButtonText: "black",
-                  defaultButtonText: "black",
+                  defaultButtonText: "white",
                   defaultButtonBackground: "white",
                   defaultButtonBackgroundHover: "#164e63",
                   defaultButtonBorder: "lightgray",
