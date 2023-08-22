@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Navbar, AgensSql, EnterprisePack, KeyFeatures, PackageDetails, Footer } from "../components";
+import { Navbar, AgensSql, EnterprisePack, Features, PackageDetails, Footer } from "../components";
 
 const MainContent = ({session}) => {
 
@@ -8,7 +8,7 @@ const MainContent = ({session}) => {
       <Navbar />
       <AgensSql />
       <EnterprisePack />
-      <KeyFeatures />
+      <Features />
       <PackageDetails />
       <Footer />
     </>

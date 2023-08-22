@@ -4,7 +4,7 @@ import passProfile from "../assets/Password-Profile.png";
 import redaction from "../assets/Data-Redaction.png";
 import auditing from "../assets/Auditing.png";
 
-export default function KeyFeatures() {
+export default function Features() {
   return (
     <>
       <div className="bg-white flex flex-col items-center px-5">
