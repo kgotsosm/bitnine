@@ -3,7 +3,7 @@
 ### Question 5-1 and Question 5-2
 
 This project is a clone of the [bitnine.net](https://bitnine.net/) website. It was created as part of my internship coding challenge and is **hosted on [bitnine.pages.dev](https://bitnine.pages.dev/)**.
-
+The version of the challenge running a Node.js backend can be found at this repo: [bitnine-local](https://github.com/kgotsosm/bitnine-local) to be run locally.
 
 ## Deployed with &nbsp;<a href="https://pages.dev"><img alt="Cloudflare Pages" src="https://user-images.githubusercontent.com/23264/106598434-9e719e00-654f-11eb-9e59-6167043cfa01.png" width="16"></a> &nbsp;Cloudflare Pages
 ## Table of Contents
