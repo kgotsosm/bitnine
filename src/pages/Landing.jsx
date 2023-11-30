@@ -11,9 +11,6 @@ export default function Landing() {
             </div>
             <div className="flex items-center justify-center md:bg-white w-full">
                 <LogCard />
-                <h2>Login with:</h2>
-                <p>Email: bitnine4@gmail.com</p>
-                <p>Password: password</p>
             </div>
         </div>
     );
