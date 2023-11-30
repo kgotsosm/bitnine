@@ -36,7 +36,6 @@ export default function LogCard() {
         />
       </div>
       <div>
-          <h2>Login with:</h2>
           <p>Email: bitnine4@gmail.com</p>
           <p>Password: password</p>
         </div>
